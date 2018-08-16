@@ -18,15 +18,26 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image">
-                    <img id="avatar_url"src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gingerbread_House_Essex_CT.jpg/220px-Gingerbread_House_Essex_CT.jpg">
-                    <span id= "github_id" class="card-title"></span>
+                    <img id="avatar_url" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gingerbread_House_Essex_CT.jpg/220px-Gingerbread_House_Essex_CT.jpg">
+                    <span id="github_id" class="card-title"></span>
                     <a id="github_link" class="btn-floating halfway-fab waves-effect waves-light red">
                         <i class="material-icons">add</i>
                     </a>
                 </div>
-                <div id="reposDiv" class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
-                        require little markup to use effectively.</p>
+                <div class="card-content">
+                    <div class="responsive-table table-status-sheet">
+                        <table class="bordered">
+                            <thead>
+                                <tr>
+                                    <th class="center">No.</th>
+                                    <th class="center">Category</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,6 +46,7 @@
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type='text/javascript' src='config.js'></script>
     <script src="main.js"></script>
 </body>
 
